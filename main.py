@@ -154,7 +154,8 @@ def run_geography_mode():
         logger.info("Geography Mode cancelled by user.")
         return
 
-    use_default = input("\nUse default objective? (y/n): ").strip().lower()
+    print(f"\nThis is the default prompt if you want to use it:\n{DEFAULT_OBJECTIVE}")
+    use_default = input("Use default objective? (y/n): ").strip().lower()
     objective = DEFAULT_OBJECTIVE if use_default == "y" else input("\nEnter your custom objective:\n")
 
     query = f"Top {sector} companies in {city} {country}".strip()
