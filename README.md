@@ -34,7 +34,7 @@ project/
 └── services/
     ├── serp_service.py      # Google search via SerpAPI
     ├── llm_selector.py      # LLM-based URL selection
-    ├── llm_extractor.py     # LLM extraction + shared call_openrouter()
+    ├── llm_extractor.py     # LLM extraction + shared call_llm()
     ├── firecrawl_service.py # Web scraping via Firecrawl
     └── company_discovery.py # Company name extraction (Geography Mode)
 ```
